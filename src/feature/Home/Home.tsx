@@ -1,7 +1,8 @@
 import { FC, useState } from "react";
 
+import { Popup, steps } from "../../base";
+
 import "./Home.style.scss";
-import { UnBoard, steps } from "../../base";
 
 const Home: FC = () => {
   const [openPopup, setOpenPopup] = useState<boolean>(false);
@@ -9,11 +10,15 @@ const Home: FC = () => {
   return (
     <div className="home">
       <h2>Home page</h2>
-      <div className="pointer" onClick={() => setOpenPopup(true)}>
+      <div
+        className="pointer"
+        title="please click!"
+        onClick={() => setOpenPopup(true)}
+      >
         click to show popup window
       </div>
       {openPopup ? (
-        <UnBoard
+        <Popup
           steps={steps}
           length={3}
           setOpenPopup={() => setOpenPopup(false)}
