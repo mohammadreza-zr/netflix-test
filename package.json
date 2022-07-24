@@ -1,6 +1,11 @@
 {
   "name": "netflix",
   "version": "0.1.0",
+  "author": {
+    "name": "MohammadReza Zare",
+    "email": "mohammadreza.zr@yahoo.com",
+    "url": "https://mr-zare.ir"
+  },
   "private": true,
   "dependencies": {
     "@types/node": "^16.7.13",
